@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const namen =  new Array("Jan", " Piet"," Joris");
+        document.write(namen);
+
+        const weekdagen = [];
+        weekdagen[0] = "maandag";
+        weekdagen[1] = "dinsdag";
+        weekdagen[2] = "woensdag";
+        weekdagen[3] = "donderdag";
+        weekdagen[4] = "vrijdag";
+        weekdagen[5] = "zaterdag";
+        weekdagen[6] = "zondag";
+        document.write(`<p>${weekdagen}</p>`);
+
+        const htmlTags= ["html", "p", "div"];
+        document.write(`<p>${htmlTags}</p>`);
+        const tag  =  prompt("Ken je nog een tag");
+        htmlTags.push(tag);
+        document.write(`<p>${htmlTags}</p>`);
+
+        const inhoud = "JavaScript is een scriptingtaal";
+        const element = inhoud.split(" ");
+        document.write(`<p>${element}</p>`);
+        document.write(`<p>${element.length}</p>`);
+
+        const elemeneten  = ["JavaScript", "PHP"];
+        const positie =  elemeneten.indexOf("javascript");
+        const positie1 =  elemeneten.indexOf("JavaScript");
+        document.write(`<p>${positie}</p>`);
+        document.write(`<p> ${positie1} </p>`);
+         
+        let array1 = ["Jan", "Piet", "An", "Cindy"];
+        array1.sort().reverse();
+        document.write(array1);
+
+        
+    </script>
+</body>
+</html>

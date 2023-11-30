@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const tekst="JavaScript";
+        document.write(`${tekst.substring(0,1)}${tekst.substring(2,3)}${tekst.substring(4,5)}${tekst.substring(5,6)}${tekst.substring(6,7)}${tekst.substring(8,9)}${tekst.substring(9,10)}`);
+
+
+        const text="JavaScript";
+        document.write(`<p>${text.charAt(0)}${text.charAt(2)}${text.charAt(4)}${text.charAt(5)}${text.charAt(6)}${text.charAt(8)}${text.charAt(9)}</p>`);
+    
+        const inhoud= "JavaScript";
+        const locatie= inhoud.indexOf("a");
+        document.write(`<p>${locatie}</p>`);
+        const loc = inhoud.indexOf("A");
+        document.write(`<p>${loc}</p>`);
+
+        const zin = "dit is een voorbeeldzin";
+        document.write(`De tekst is nu: ${zin.substring(0,1).toUpperCase()}${zin.substring(1,23)}. `);
+
+
+    </script>
+</body>
+</html>

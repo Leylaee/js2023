@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const radius1 = prompt("Geef radius van eerste cilinder:");
+        const radius2 = prompt("Geef radius van tweede cilinder:");
+ 
+
+        const hoogte1 = prompt("Geef hoogte van eerste cilinder:");
+        const hoogte2 = prompt("Geef hoogte van tweede cilinder:");
+
+        const aantal1 = prompt("Geef aantal decimalen voor de berekening");
+        const aantal2 = prompt("Geef aantal decimalen voor de tweede berekening");
+
+       
+        const volume1 = parseFloat(radius1) * parseFloat(radius1) * 3.1415 * parseFloat(hoogte1);
+        const dec1 = volume1.toFixed(aantal1);
+        const volume2 = parseFloat(radius2) * parseFloat(radius2) * 3.1415 * parseFloat(hoogte2);
+        const dec2 = volume2.toFixed(aantal2);
+        
+        document.write(`<p>Het volume van de eerste cilinder met radius ${radius1} en hoogte ${hoogte1} en aantal decimalen ${aantal1} is: ${dec1}</p>`);
+        document.write(`<p>Het volume van de eerste cilinder met radius ${radius2} en hoogte ${hoogte2} en aantal decimalen ${aantal2} is: ${dec2}</p>`);
+
+        const totaal = dec1 + dec2;
+        document.write(`Samen is dit een naar onder afgerond volume van ${totaal}`);
+
+    </script>
+</body>
+</html>
